@@ -4,9 +4,9 @@ const assertEqual = function(actual, expected) {
   const thumbsDown = String.fromCodePoint(0x1F44E);
 
   if (actual === expected) {
-    console.log(thumbsUp + 'Assertion Passed:' + actual + ' === ' + expected);
+    console.log(thumbsUp + ` Assertion Passed: ${actual}  ===  ${expected}`);
   } else {
-    console.log(thumbsDown + 'Assertion Failed: ' + actual + ' !== ' + expected);
+    console.log(thumbsDown + ` Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
