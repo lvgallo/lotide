@@ -1,7 +1,6 @@
-const thumbsUp = String.fromCodePoint(0x1F44D);
-const thumbsDown = String.fromCodePoint(0x1F44E);
-
 const assertEqual = function(actual, expected) {
+  const thumbsUp = String.fromCodePoint(0x1F44D);
+  const thumbsDown = String.fromCodePoint(0x1F44E);
   if (actual === expected) {
     console.log(thumbsUp + ` Assertion Passed: ${actual}  ===  ${expected}`);
   } else {
@@ -41,9 +40,11 @@ const eqObjects = function (object1, object2) {
   }
 };
 
+
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 console.log(eqObjects(ab, ba)); // => true
+
 
 const abc = { a: "1", b: "2", c: "3" };
 console.log(eqObjects(ab, abc)); // => false
